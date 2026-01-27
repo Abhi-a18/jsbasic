@@ -10,7 +10,7 @@ const cars = [
 //- Find cars priced above ₹10,00,000
 let a =[]
 for ( let i; i<cars.length; i++){
-    if(cars[i].price<1000000){
+    if(cars[i].price>1000000){
         a.push[cars[a]]
     }
 }
