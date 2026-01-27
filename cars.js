@@ -11,7 +11,7 @@ const cars = [
 let a =[]
 for ( let i; i<cars.length; i++){
     if(cars[i].price>1000000){
-        a.push[cars[a]]
+        a.push(cars[i])
     }
 }
 console.log(a)
