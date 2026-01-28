@@ -7,25 +7,25 @@ const cars = [
   { brand: "Kia", model: "Seltos", year: 2022, price: 1500000 },
   { brand: "Mahindra", model: "XUV300", year: 2019, price: 900000 }
 ];
-//- Find cars priced above ₹10,00,000
-// let a =[]
-// for ( let i=0; i<cars.length; i++){
-//     if(cars[i].price>1000000){
-//         a.push(cars[i])
-//     }
-// }
-// console.log(a)
-// //  Find the oldest car
-// let oldest = cars[0]
-// for ( let i=0; i<cars.length; i++){
-//     if(cars.year< oldest.year){
-//         oldest = cars[i]
+// Find cars priced above ₹10,00,000
+let a =[]
+for ( let i=0; i<cars.length; i++){
+    if(cars[i].price>1000000){
+        a.push(cars[i])
+    }
+}
+console.log(a)
+//  Find the oldest car
+let oldest = cars[0]
+for ( let i=0; i<cars.length; i++){
+    if(cars.year< oldest.year){
+        oldest = cars[i]
            
-//     }
+    }
   
-// }
-//    console.log(oldest)
-// Find the average price
+}
+   console.log(oldest)
+//Find the average price
 let sum = 0
 for ( let i=0; i<cars.length; i++){
     sum+= cars[i].price
@@ -60,3 +60,22 @@ for(let i=0 ; i<cars.length; i++){
     }
    }
    console.log(exp)
+   // Create array with only brand & model
+   let brand1 = []
+   function model(n){
+    for(let i = 0; i< cars.length; i++){
+        brand1.push(n[i].brand ,n[i].model)
+    }
+   }
+   model(cars)
+   console.log(brand1)
+//    Increase price by 5%
+ let newprice = []
+ function increaseprice(){
+ for(let i=0 ; i<cars.length; i++){
+       newprice.push(cars[i].price*1.05);
+ }
+}
+increaseprice()
+console.log(newprice)
+console.log(cars)
